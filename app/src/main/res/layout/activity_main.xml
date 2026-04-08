@@ -5,31 +5,22 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/bg"
+    tools:context=".pertemuan3.ThirdActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="hvgh"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnToFourth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="104dp" />
+        android:backgroundTint="@color/tombol"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.405" />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Switch"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="264dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
