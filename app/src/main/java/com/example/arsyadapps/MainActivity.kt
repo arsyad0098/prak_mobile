@@ -2,18 +2,16 @@ package com.example.arsyadapps
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.arsyadapps.R
 import com.example.arsyadapps.databinding.ActivityMainBinding
-import com.example.arsyadapps.databinding.ActivityThirdBinding
+import com.example.arsyadapps.pertemuan2.SecondActivity
+import com.example.arsyadapps.pertemuan3.ThirdActivity
 import com.example.arsyadapps.pertemuan4.FourthActivity
+import com.example.arsyadapps.pertemuan5.FifthActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,29 +22,41 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            // Inisialisasi komponen
-
+        
+        ViewCompat.setOnApplyWindowInsetsListener(binding.main) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-
-
-        binding.btnToFourth.setOnClickListener {
-            //Mengambil value dari inputNama dan menampilkan di Logcat
-            val intent = Intent(this, FourthActivity::class.java)
-            startActivity(intent)
-
-            /*tambahkan bagian berikut*/
-            intent.putExtra("name", "Politeknik Caltex Riau")
-            intent.putExtra("from", "Rumbai")
-            intent.putExtra("age", 25)
-//            finish()
+        // Navigasi Pertemuan
+        binding.btnPertemuan2.setOnClickListener {
+            startActivity(Intent(this, SecondActivity::class.java))
         }
 
+        binding.btnPertemuan3.setOnClickListener {
+            startActivity(Intent(this, ThirdActivity::class.java))
+        }
 
+        binding.btnPertemuan4.setOnClickListener {
+            startActivity(Intent(this, FourthActivity::class.java))
+        }
 
+        binding.btnPertemuan5.setOnClickListener {
+            startActivity(Intent(this, FifthActivity::class.java))
+        }
+
+        // Fitur Logout
+        binding.btnLogout.setOnClickListener {
+            AlertDialog.Builder(this)
+                .setTitle("Logout")
+                .setMessage("Apakah Anda yakin ingin keluar?")
+                .setPositiveButton("Ya") { _, _ ->
+                    startActivity(Intent(this, AuthActivity::class.java))
+                    finish()
+                }
+                .setNegativeButton("Tidak", null)
+                .show()
         }
     }
+}
