@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0D1B2A"
-    tools:context=".pertemuan5.WebViewActivity">
+    tools:context=".Home.pertemuan5.WebViewActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBar"

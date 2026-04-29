@@ -1,4 +1,4 @@
-package com.example.arsyadapps.pertemuan2
+package com.example.arsyadapps.Home.pertemuan2
 
 import android.os.Bundle
 import android.util.Log

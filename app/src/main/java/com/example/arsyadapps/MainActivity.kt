@@ -8,11 +8,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.arsyadapps.databinding.ActivityMainBinding
-import com.example.arsyadapps.pertemuan2.SecondActivity
-import com.example.arsyadapps.pertemuan3.ThirdActivity
-import com.example.arsyadapps.pertemuan4.FourthActivity
-import com.example.arsyadapps.pertemuan5.FifthActivity
-import com.example.arsyadapps.pertemuan7.SeventhActivity
+import com.example.arsyadapps.Home.pertemuan2.SecondActivity
+import com.example.arsyadapps.Home.pertemuan3.ThirdActivity
+import com.example.arsyadapps.Home.pertemuan4.FourthActivity
+import com.example.arsyadapps.Home.pertemuan5.FifthActivity
+import com.example.arsyadapps.Home.pertemuan7.SeventhActivity
 
 class MainActivity : AppCompatActivity() {
 

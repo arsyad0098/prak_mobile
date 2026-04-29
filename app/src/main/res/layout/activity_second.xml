@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0B0E11"
-    tools:context=".pertemuan2.SecondActivity">
+    tools:context=".Home.pertemuan2.SecondActivity">
 
     <LinearLayout
         android:id="@+id/topBar"
