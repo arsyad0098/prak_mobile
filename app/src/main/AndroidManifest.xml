@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ArsyadApps">
         <activity
+            android:name=".pertemuan7.SeventhActivity"
+            android:exported="false" />
+        <activity
             android:name=".AuthActivity"
             android:exported="false" />
         <activity

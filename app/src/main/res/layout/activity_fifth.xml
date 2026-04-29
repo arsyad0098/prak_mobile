@@ -16,15 +16,6 @@
         android:background="@android:color/transparent"
         app:elevation="0dp">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="#1B263B"
-            app:title="Web Explorer Pro"
-            app:titleTextColor="@android:color/white"
-            app:layout_scrollFlags="scroll|enterAlways|snap" />
-
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
@@ -134,5 +125,16 @@
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1B263B"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="center"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        app:title="Web Explorer Pro"
+        app:titleTextColor="@android:color/white" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
