@@ -15,6 +15,7 @@ import com.example.arsyadapps.Home.pertemuan3.ThirdActivity
 import com.example.arsyadapps.Home.pertemuan4.FourthActivity
 import com.example.arsyadapps.Home.pertemuan5.FifthActivity
 import com.example.arsyadapps.Home.pertemuan7.SeventhActivity
+import com.example.arsyadapps.Home.pertemuan_9.NinthActivity
 import com.example.arsyadapps.R
 import com.example.arsyadapps.databinding.FragmentHomeBinding
 
@@ -55,6 +56,10 @@ class HomeFragment : Fragment() {
 
         binding.btnPertemuan7.setOnClickListener {
             startActivity(Intent(requireContext(), SeventhActivity::class.java))
+        }
+
+        binding.btnPertemuan9.setOnClickListener {
+            startActivity(Intent(requireContext(), NinthActivity::class.java))
         }
         // Fitur Logout
         binding.btnLogout.setOnClickListener {
