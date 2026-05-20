@@ -121,17 +121,31 @@
         app:layout_constraintTop_toBottomOf="@id/btnPertemuan7" />
 
     <Button
+        android:id="@+id/btnPertemuan10"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_bg"
+        android:text="Pertemuan 10"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPertemuan9" />
+
+    <Button
         android:id="@+id/btnLogout"
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="68dp"
         android:background="@drawable/button_bg"
         android:text="Logout"
         android:textColor="#FFFFFF"
         app:backgroundTint="#F44336"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnPertemuan9" />
+        app:layout_constraintTop_toBottomOf="@id/btnPertemuan10" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

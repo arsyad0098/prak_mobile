@@ -13,6 +13,7 @@ import com.example.arsyadapps.Home.pertemuan3.ThirdActivity
 import com.example.arsyadapps.Home.pertemuan4.FourthActivity
 import com.example.arsyadapps.Home.pertemuan5.FifthActivity
 import com.example.arsyadapps.Home.pertemuan7.SeventhActivity
+import com.example.arsyadapps.Home.pertemuan10.TenthActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -49,6 +50,10 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnPertemuan7.setOnClickListener {
             startActivity(Intent(this, SeventhActivity::class.java))
+        }
+
+        binding.btnPertemuan10.setOnClickListener {
+            startActivity(Intent(this, TenthActivity::class.java))
         }
 
         // Fitur Logout
