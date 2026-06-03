@@ -14,13 +14,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ArsyadApps">
         <activity
+            android:name=".Message.tutorial.TutorialMessageActivity"
+            android:exported="false" />
+        <activity
             android:name=".Home.pertemuan10.TenthActivity"
             android:exported="false" />
         <activity
             android:name=".Home.pertemuan_9.NinthActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".BaseActivity"
             android:exported="false" />
         <activity
             android:name=".Home.pertemuan7.SeventhActivity"
@@ -29,7 +32,7 @@
             android:name=".AuthActivity"
             android:exported="false" />
         <activity
-            android:name=".BaseActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,9 +45,6 @@
             android:exported="false" />
         <activity
             android:name=".Home.pertemuan5.FifthActivity"
-            android:exported="false" />
-        <activity
-            android:name=".main_menu"
             android:exported="false" />
         <activity
             android:name=".Home.pertemuan4.FourthActivity"
@@ -62,5 +62,4 @@
             android:name=".Home.pertemuan2.SecondActivity"
             android:exported="false" />
     </application>
-
 </manifest>
