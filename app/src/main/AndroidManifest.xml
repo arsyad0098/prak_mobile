@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ArsyadApps">
         <activity
+            android:name=".Note.NoteFormActivity"
+            android:exported="false" />
+        <activity
             android:name=".Message.tutorial.TutorialMessageActivity"
             android:exported="false" />
         <activity
@@ -62,4 +65,5 @@
             android:name=".Home.pertemuan2.SecondActivity"
             android:exported="false" />
     </application>
+
 </manifest>
