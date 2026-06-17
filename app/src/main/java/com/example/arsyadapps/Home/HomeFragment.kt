@@ -73,6 +73,10 @@ class HomeFragment : Fragment() {
             startActivity(Intent(requireContext(), NoteFormActivity::class.java))
         }
 
+        binding.btnPertemuan13.setOnClickListener {
+            startActivity(Intent(requireContext(), com.example.arsyadapps.Home.pertemuan_13.ThirteenthActivity::class.java))
+        }
+
         // ... (Kode tombol Pertemuan 2 - 10 Anda yang lain tetap aman di sini) ...
 
         // Fitur Logout
