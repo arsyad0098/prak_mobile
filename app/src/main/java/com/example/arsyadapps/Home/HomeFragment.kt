@@ -73,6 +73,34 @@ class HomeFragment : Fragment() {
             startActivity(Intent(requireContext(), NoteFormActivity::class.java))
         }
 
+        binding.btnPertemuan2.setOnClickListener {
+            startActivity(Intent(requireContext(), com.example.arsyadapps.Home.pertemuan2.SecondActivity::class.java))
+        }
+
+        binding.btnPertemuan3.setOnClickListener {
+            startActivity(Intent(requireContext(), com.example.arsyadapps.Home.pertemuan3.ThirdActivity::class.java))
+        }
+
+        binding.btnPertemuan4.setOnClickListener {
+            startActivity(Intent(requireContext(), com.example.arsyadapps.Home.pertemuan4.FourthActivity::class.java))
+        }
+
+        binding.btnPertemuan5.setOnClickListener {
+            startActivity(Intent(requireContext(), com.example.arsyadapps.Home.pertemuan5.FifthActivity::class.java))
+        }
+
+        binding.btnPertemuan7.setOnClickListener {
+            startActivity(Intent(requireContext(), com.example.arsyadapps.Home.pertemuan7.SeventhActivity::class.java))
+        }
+
+        binding.btnPertemuan9.setOnClickListener {
+            startActivity(Intent(requireContext(), com.example.arsyadapps.Home.pertemuan_9.NinthActivity::class.java))
+        }
+
+        binding.btnPertemuan10.setOnClickListener {
+            startActivity(Intent(requireContext(), com.example.arsyadapps.Home.pertemuan10.TenthActivity::class.java))
+        }
+
         binding.btnPertemuan13.setOnClickListener {
             startActivity(Intent(requireContext(), com.example.arsyadapps.Home.pertemuan_13.ThirteenthActivity::class.java))
         }
